@@ -31,3 +31,4 @@ C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\Cont
 C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\ControleDeTarefas.pdb
 C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\ControleDeTarefas.genruntimeconfig.cache
 C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\ref\ControleDeTarefas.dll
+C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\ControleDeTarefas.Properties.Resources.resources
