@@ -14,3 +14,20 @@ C:\Users\Iksortso K2\Desktop\Faculdade\C#\AtividadeForms02\ControleDeTarefas\Con
 C:\Users\Iksortso K2\Desktop\Faculdade\C#\AtividadeForms02\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\ControleDeTarefas.pdb
 C:\Users\Iksortso K2\Desktop\Faculdade\C#\AtividadeForms02\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\ControleDeTarefas.genruntimeconfig.cache
 C:\Users\Iksortso K2\Desktop\Faculdade\C#\AtividadeForms02\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\ref\ControleDeTarefas.dll
+C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\bin\Debug\net6.0-windows\ControleDeTarefas.exe
+C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\bin\Debug\net6.0-windows\ControleDeTarefas.deps.json
+C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\bin\Debug\net6.0-windows\ControleDeTarefas.runtimeconfig.json
+C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\bin\Debug\net6.0-windows\ControleDeTarefas.dll
+C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\bin\Debug\net6.0-windows\ControleDeTarefas.pdb
+C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\ControleDeTarefas.csproj.AssemblyReference.cache
+C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\ControleDeTarefas.Form1.resources
+C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\ControleDeTarefas.csproj.GenerateResource.cache
+C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\ControleDeTarefas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\ControleDeTarefas.AssemblyInfoInputs.cache
+C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\ControleDeTarefas.AssemblyInfo.cs
+C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\ControleDeTarefas.csproj.CoreCompileInputs.cache
+C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\ControleDeTarefas.dll
+C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\refint\ControleDeTarefas.dll
+C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\ControleDeTarefas.pdb
+C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\ControleDeTarefas.genruntimeconfig.cache
+C:\Users\17588831626\Source\Repos\AtividadeForms2-PRIVADO\ControleDeTarefas\ControleDeTarefas\obj\Debug\net6.0-windows\ref\ControleDeTarefas.dll

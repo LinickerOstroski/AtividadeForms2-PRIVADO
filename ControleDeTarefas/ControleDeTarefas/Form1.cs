@@ -8,51 +8,29 @@ namespace ControleDeTarefas
         public Form1()
         {
             InitializeComponent();
+            carregarDados();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void salvarDados()
         {
-            string tarefa = txtTarefa.Text;
-            string dataLimite = txtData.Text;
-
-            DataTable dt = new DataTable();
-
-            dt.Columns.Add("Tarefa", typeof(string));
-            dt.Columns.Add("Data Limite", typeof(string));
-
-            DataRow novaLinha = dt.NewRow();
-            novaLinha["Tarefa"] = tarefa;
-            novaLinha["Data Limite"] = dataLimite;
-
-            dt.Rows.Add(novaLinha);
-            dgTarefas.DataSource = dt;
-        }
-
-        private void btnResolver_Click(object sender, EventArgs e)
-        {
-            if (dgTarefas.SelectedRows.Count > 0)
+            using (StreamWriter sw = new StreamWriter("dados.txt"))
             {
-                DataRowView linhaSelecionada = dgTarefas.SelectedRows[0].DataBoundItem as DataRowView;
-
-                if (linhaSelecionada != null)
+                foreach (DataGridViewRow row in dgTarefas.Rows)
                 {
-                    DataRow linhaDataRow = linhaSelecionada.Row;
-                    DataTable dt = dgTarefas.DataSource as DataTable;
-
-                    if (dt != null)
+                    if (!row.IsNewRow)
                     {
-                        dt.Rows.Remove(linhaDataRow);
-                        dgTarefas.Refresh();
+                        string linha = "";
+                        foreach (DataGridViewCell cell in row.Cells)
+                        {
+                            linha += cell.Value.ToString() + ";";
+                        }
+                        sw.WriteLine(linha.TrimEnd(';'));
                     }
                 }
             }
-            else
-            {
-                MessageBox.Show("Escolha uma linha!");
-            }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void carregarDados()
         {
             if (File.Exists("dados.txt"))
             {
@@ -78,24 +56,37 @@ namespace ControleDeTarefas
                 MessageBox.Show("O arquivo especificado não existe.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            string tarefa = txtTarefa.Text;
+            string dataLimite = txtData.Text;
+
+            dgTarefas.Rows.Add(new object[]{ tarefa, dataLimite});
+            salvarDados();
+        }
+
+        private void btnResolver_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = new DialogResult();
+
+            resultado = MessageBox.Show("Quer mesmo resolver?", "Confirmação", MessageBoxButtons.YesNo);
+
+            if (resultado == DialogResult.Yes)
+            {
+                dgTarefas.Rows.RemoveAt(dgTarefas.CurrentRow.Index);
+            }
+            
+            salvarDados();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+          
+        }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            using (StreamWriter sw = new StreamWriter("dados.txt"))
-            {
-                foreach (DataGridViewRow row in dgTarefas.Rows)
-                {
-                    if (!row.IsNewRow)
-                    {
-                        string linha = "";
-                        foreach (DataGridViewCell cell in row.Cells)
-                        {
-                            linha += cell.Value.ToString() + ";";
-                        }
-                        sw.WriteLine(linha.TrimEnd(';'));
-                    }
-                }
-            }
+
         }
     }
 }

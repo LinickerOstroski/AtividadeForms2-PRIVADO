@@ -28,111 +28,126 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dgTarefas = new DataGridView();
-            label1 = new Label();
-            label2 = new Label();
-            txtTarefa = new TextBox();
-            txtData = new TextBox();
-            btnAdd = new Button();
-            btnResolver = new Button();
-            ((System.ComponentModel.ISupportInitialize)dgTarefas).BeginInit();
-            SuspendLayout();
+            this.dgTarefas = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtTarefa = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnResolver = new System.Windows.Forms.Button();
+            this.txtData = new System.Windows.Forms.DateTimePicker();
+            this.Tarefas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgTarefas)).BeginInit();
+            this.SuspendLayout();
             // 
             // dgTarefas
             // 
-            dgTarefas.BackgroundColor = SystemColors.ControlLightLight;
-            dgTarefas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgTarefas.GridColor = SystemColors.Control;
-            dgTarefas.Location = new Point(12, 94);
-            dgTarefas.Name = "dgTarefas";
-            dgTarefas.RowTemplate.Height = 25;
-            dgTarefas.Size = new Size(441, 150);
-            dgTarefas.TabIndex = 0;
+            this.dgTarefas.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgTarefas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgTarefas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Tarefas,
+            this.Data});
+            this.dgTarefas.GridColor = System.Drawing.SystemColors.Control;
+            this.dgTarefas.Location = new System.Drawing.Point(12, 94);
+            this.dgTarefas.Name = "dgTarefas";
+            this.dgTarefas.RowTemplate.Height = 25;
+            this.dgTarefas.Size = new System.Drawing.Size(441, 150);
+            this.dgTarefas.TabIndex = 0;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(12, 17);
-            label1.Name = "label1";
-            label1.Size = new Size(63, 25);
-            label1.TabIndex = 1;
-            label1.Text = "Tarefa";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(12, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Tarefa";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(190, 17);
-            label2.Name = "label2";
-            label2.Size = new Size(51, 25);
-            label2.TabIndex = 2;
-            label2.Text = "Data";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(190, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 25);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Data";
             // 
             // txtTarefa
             // 
-            txtTarefa.BackColor = SystemColors.ControlLightLight;
-            txtTarefa.Location = new Point(12, 45);
-            txtTarefa.Name = "txtTarefa";
-            txtTarefa.Size = new Size(170, 23);
-            txtTarefa.TabIndex = 3;
-            // 
-            // txtData
-            // 
-            txtData.BackColor = SystemColors.ControlLightLight;
-            txtData.Location = new Point(190, 45);
-            txtData.Name = "txtData";
-            txtData.Size = new Size(100, 23);
-            txtData.TabIndex = 4;
-            txtData.Text = "__/__/____";
+            this.txtTarefa.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtTarefa.Location = new System.Drawing.Point(12, 45);
+            this.txtTarefa.Name = "txtTarefa";
+            this.txtTarefa.Size = new System.Drawing.Size(170, 23);
+            this.txtTarefa.TabIndex = 3;
             // 
             // btnAdd
             // 
-            btnAdd.BackColor = SystemColors.ActiveCaption;
-            btnAdd.FlatStyle = FlatStyle.Flat;
-            btnAdd.Location = new Point(333, 37);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(50, 31);
-            btnAdd.TabIndex = 5;
-            btnAdd.Text = "Add";
-            btnAdd.UseVisualStyleBackColor = false;
-            btnAdd.Click += btnAdd_Click;
+            this.btnAdd.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Location = new System.Drawing.Point(324, 37);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(50, 31);
+            this.btnAdd.TabIndex = 5;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnResolver
             // 
-            btnResolver.BackColor = SystemColors.InactiveCaption;
-            btnResolver.FlatStyle = FlatStyle.Flat;
-            btnResolver.Location = new Point(389, 37);
-            btnResolver.Name = "btnResolver";
-            btnResolver.Size = new Size(64, 31);
-            btnResolver.TabIndex = 6;
-            btnResolver.Text = "Resolver";
-            btnResolver.UseVisualStyleBackColor = false;
-            btnResolver.Click += btnResolver_Click;
+            this.btnResolver.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnResolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResolver.Location = new System.Drawing.Point(389, 37);
+            this.btnResolver.Name = "btnResolver";
+            this.btnResolver.Size = new System.Drawing.Size(64, 31);
+            this.btnResolver.TabIndex = 6;
+            this.btnResolver.Text = "Resolver";
+            this.btnResolver.UseVisualStyleBackColor = false;
+            this.btnResolver.Click += new System.EventHandler(this.btnResolver_Click);
+            // 
+            // txtData
+            // 
+            this.txtData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtData.Location = new System.Drawing.Point(190, 45);
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(93, 23);
+            this.txtData.TabIndex = 8;
+            // 
+            // Tarefas
+            // 
+            this.Tarefas.HeaderText = "Tarefas";
+            this.Tarefas.Name = "Tarefas";
+            this.Tarefas.Width = 200;
+            // 
+            // Data
+            // 
+            this.Data.HeaderText = "Data";
+            this.Data.Name = "Data";
+            this.Data.Width = 200;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Control;
-            ClientSize = new Size(465, 256);
-            Controls.Add(btnResolver);
-            Controls.Add(btnAdd);
-            Controls.Add(txtData);
-            Controls.Add(txtTarefa);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(dgTarefas);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
-            MaximizeBox = false;
-            Name = "Form1";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Controle de tarefas";
-            FormClosing += Form1_FormClosing;
-            Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)dgTarefas).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(465, 256);
+            this.Controls.Add(this.txtData);
+            this.Controls.Add(this.btnResolver);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.txtTarefa);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dgTarefas);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Controle de tarefas";
+            ((System.ComponentModel.ISupportInitialize)(this.dgTarefas)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -141,8 +156,10 @@
         private Label label1;
         private Label label2;
         private TextBox txtTarefa;
-        private TextBox txtData;
         private Button btnAdd;
         private Button btnResolver;
+        private DateTimePicker txtData;
+        private DataGridViewTextBoxColumn Tarefas;
+        private DataGridViewTextBoxColumn Data;
     }
 }
